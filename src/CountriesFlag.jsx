@@ -39,7 +39,7 @@ export default function Countries() {
         const jsonRes = await res.json();
         setState(jsonRes);
       } catch (error) {
-        console.log("Error Fetching data: ", error);
+        console.Error("Error Fetching data: ", error);
       }
     };
     fetchData();
